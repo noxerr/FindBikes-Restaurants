@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practica Python LP - Restaurants</title>
+    <meta charset="UTF-8" />
+    <style>
+      html { font-family:Arial }
+      table { border-top:2px solid black;border-bottom:2px solid black; border-left:2px solid black; border-right:2px solid black }
+      th { font-size:18px;color:#fff;border-left:1px solid black;border-right:1px solid black;border-bottom:1px solid black }
+      td { font-size:14px;border-left:1px solid black;border-right:1px solid black;padding:5px }
+    </style>
+  </head>
+  <body>
+    <table style="width:100%;border-collapse:collapse">
+      <colgroup style="width:20%"></colgroup>
+      <tr style="background-color:#65e">
+        <th rowspan="2" style="padding-top:20px;padding-bottom:20px">Nom Restaurant</th>
+        <th rowspan="2">Adresa</th>
+        <th colspan="3">Bicings amb lloc</th>
+        <th colspan="3">Bicings amb bicis</th>
+      </tr>
+      <tr style="background-color:#65e">
+        <th style="font-size:16px">Adresa</th>
+        <th style="font-size:16px">Llocs</th>
+        <th style="font-size:16px">Dist</th>
+        <th style="font-size:16px">Adresa</th>
+        <th style="font-size:16px">Bicis</th>
+        <th style="font-size:16px">Dist</th>
+      </tr>
+ 
+    <tr style="background-color:#ccc;border-bottom:2px solid black">
+    <td rowspan="25" style="border-bottom:2px solid black">Bar cafeteria Il Caffè di Roma *Heron City<br/><br/>+34 932765126</td>
+    <td rowspan="25" style="border-bottom:2px solid black">Av Rio de Janeiro 42<br/><br/>08016<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#ccc'>
+        <td>Andreu Nin - 22</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>79.35m</td>
+        <td>Andreu Nin - 22</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>79.35m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer de Rossell&oacute; i Porcel - 1</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>284.87m</td>
+        <td>Carrer de Rossell&oacute; i Porcel - 1</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>284.87m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Concepci&oacute; Arenal - 281</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>392.48m</td>
+        <td>Concepci&oacute; Arenal - 281</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>392.48m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Malats - 98</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>456.45m</td>
+        <td>Malats - 98</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>456.45m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Carrer de Maladeta - 1</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>518.93m</td>
+        <td>Rio de Janeiro - 3</td>
+        <td style='text-align:center'>31</td>
+        <td style='text-align:left'>499.55m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer Tur&oacute; Blau - 1</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>546.27m</td>
+        <td>Carrer de l&#039;Escultor Ord&oacute;&ntilde;ez - 55</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>501.6m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Avda. Meridiana - 404</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>557.36m</td>
+        <td>Carrer de Maladeta - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>518.93m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Irlanda - 11</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>592.57m</td>
+        <td>Carrer Tur&oacute; Blau - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>546.27m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Carrer de Bartrina - 14</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>599.13m</td>
+        <td>Avda. Meridiana - 404</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>557.36m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia - 1</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>622.69m</td>
+        <td>Irlanda - 11</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>592.57m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Rambla Fabra i Puig - 67</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>638.32m</td>
+        <td>Carrer de Bartrina - 14</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>599.13m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Malats - 28</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>715.65m</td>
+        <td>Pla&ccedil;a dels Jardins d&#039;Alf&agrave;bia - 1</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>622.69m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Sant Adri&agrave; - 2</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>728.34m</td>
+        <td>Rambla Fabra i Puig - 67</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>638.32m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Sant Iscle - 60</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>814.77m</td>
+        <td>Malats - 28</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>715.65m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pl. Virrei Amat</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>815.73m</td>
+        <td>Sant Adri&agrave; - 2</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>728.34m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Seu del Districte (Nou Barris)</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>874.14m</td>
+        <td>Sant Iscle - 60</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>814.77m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran de Sant Andreu - 93</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>887.69m</td>
+        <td>Pl. Virrei Amat</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>815.73m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>C/Joan Torras - 28</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>909.52m</td>
+        <td>Seu del Districte (Nou Barris)</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>874.14m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Felip II - 214</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>935.39m</td>
+        <td>Gran de Sant Andreu - 93</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>887.69m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Amilcar - 1</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>941.08m</td>
+        <td>C/Joan Torras - 28</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>909.52m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Concepci&oacute; Arenal - 176</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>956.05m</td>
+        <td>Felip II - 214</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>935.39m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Marie Curie - 8</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>973.37m</td>
+        <td>Amilcar - 1</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>941.08m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Concepci&oacute; Arenal - 176</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>956.05m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Marie Curie - 8</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>973.37m</td>
+      </tr>
+ 
+    <tr style="background-color:#eee;border-bottom:2px solid black">
+    <td rowspan="30" style="border-bottom:2px solid black">Bar cafeteria Il Caffè di Roma * Villarroel<br/><br/>	</td>
+    <td rowspan="30" style="border-bottom:2px solid black">C Villarroel 189<br/><br/>08036<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#eee'>
+        <td>Rossell&oacute; - 101</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>167.61m</td>
+        <td>Rossell&oacute; - 108</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>104.1m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>C&ograve;rsega - 216</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>321.66m</td>
+        <td>Rossell&oacute; - 101</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>167.61m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Casanova - 119</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>360.96m</td>
+        <td>C&ograve;rsega - 216</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>321.66m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>C/ Londres - 53</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>379.68m</td>
+        <td>Casanova - 119</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>360.96m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Villarroel - 208</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>391.88m</td>
+        <td>C/ Londres - 53</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>379.68m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Viladomat - 244</td>
+        <td style='text-align:center'>29</td>
+        <td style='text-align:left'>402.38m</td>
+        <td>Villarroel - 208</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>391.88m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Comte Borrell - 198</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>416.59m</td>
+        <td>Viladomat - 244</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>402.38m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Londres - 101</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>483.43m</td>
+        <td>Comte Borrell - 198</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>416.59m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Avda. Roma - 117</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>503.34m</td>
+        <td>Londres - 101</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>483.43m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Enric Granados - 99</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>552.49m</td>
+        <td>Mallorca - 84</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>492.22m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Rocafort - 214</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>650.52m</td>
+        <td>Avda. Roma - 117</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>503.34m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Josep Tarradellas - 129</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>681.34m</td>
+        <td>Enric Granados - 99</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>552.49m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Mallorca - 41</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>712.07m</td>
+        <td>Comte Borrell - 177</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>605.35m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Casanovas, 71 - 82</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>712.43m</td>
+        <td>Josep Tarradellas - 129</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>681.34m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Av. Diagonal - 602</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>761.16m</td>
+        <td>Mallorca - 41</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>712.07m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Rocafort - 167</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>761.52m</td>
+        <td>Casanovas, 71 - 82</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>712.43m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Loreto - 49</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>774.49m</td>
+        <td>Enric Granados - 35</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>730.4m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Tuset - 19</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>780.04m</td>
+        <td>Av. Diagonal - 602</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>761.16m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Amig&oacute; - 23</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>796.21m</td>
+        <td>Rocafort - 167</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>761.52m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Av. Diagonal - 612</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>830.35m</td>
+        <td>Loreto - 49</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>774.49m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Diputaci&oacute; - 152</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>836.15m</td>
+        <td>Tuset - 19</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>780.04m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Josep Tarradellas - 58</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>837.99m</td>
+        <td>Amig&oacute; - 23</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>796.21m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Rambla Catalunya - 133</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>851.74m</td>
+        <td>Av. Diagonal - 612</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>830.35m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Enten&ccedil;a - 227</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>894.95m</td>
+        <td>Diputaci&oacute; - 152</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>836.15m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Calabria - 134</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>901.88m</td>
+        <td>Josep Tarradellas - 58</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>837.99m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Proven&ccedil;a - 241</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>909.24m</td>
+        <td>Enten&ccedil;a - 227</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>894.95m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Diputaci&oacute; - 200</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>898.92m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Calabria - 134</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>901.88m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Proven&ccedil;a - 241</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>909.24m</td>
+      </tr>
+ 
+    <tr style="background-color:#ccc;border-bottom:2px solid black">
+    <td rowspan="21" style="border-bottom:2px solid black">Restaurant cafeteria La Mossegada<br/><br/>+34 933030058</td>
+    <td rowspan="21" style="border-bottom:2px solid black">G.V. Corts Catalanes 1040<br/><br/>08020<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#ccc'>
+        <td>Gran V&iacute;a - 1062</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>192.71m</td>
+        <td>Gran V&iacute;a - 1062</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>192.71m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran V&iacute;a - 981</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>234.79m</td>
+        <td>Gran V&iacute;a - 981</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>234.79m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran V&iacute;a, 1041/ Selva de Mar - 1041</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>238.66m</td>
+        <td>Gran Via - 990</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>255.54m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran Via - 990</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>255.54m</td>
+        <td>Pere IV - 383</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>362.2m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pere IV - 383</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>362.2m</td>
+        <td>Pere IV - 301</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>382.14m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pere IV - 301</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>382.14m</td>
+        <td>Rambla Guip&uacute;scoa - 43</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>502.88m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Rambla Guip&uacute;scoa - 43</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>502.88m</td>
+        <td>Gran V&iacute;a - 1118</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>620.57m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran V&iacute;a - 1118</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>620.57m</td>
+        <td>Gran Via  - 940</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>626.08m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran Via  - 940</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>626.08m</td>
+        <td>Espronceda - 124</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>723.04m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Espronceda - 124</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>723.04m</td>
+        <td>Gran V&iacute;a - 1131</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>745.53m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran V&iacute;a - 1131</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>745.53m</td>
+        <td>Arag&oacute; - 661</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>760.06m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Arag&oacute; - 661</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>760.06m</td>
+        <td>Diagonal - 82</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>793.96m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Diagonal - 82</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>793.96m</td>
+        <td>Rambla Guip&uacute;scoa - 103</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>800.12m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Rambla Guip&uacute;scoa - 103</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>800.12m</td>
+        <td>Castella - 28</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>828.65m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Castella - 28</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>828.65m</td>
+        <td>Pl. Valent&iacute; Amirall</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>845.12m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Valent&iacute; Amirall</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>845.12m</td>
+        <td>Espronceda - 298</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>858.94m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Espronceda - 298</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>858.94m</td>
+        <td>Pujades - 311</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>872.77m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pujades - 311</td>
+        <td style='text-align:center'>31</td>
+        <td style='text-align:left'>872.77m</td>
+        <td>Gran V&iacute;a - 902</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>874.59m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran V&iacute;a - 902</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>874.59m</td>
+        <td>M&uacute;rcia - 64</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>912.2m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>M&uacute;rcia - 64</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>912.2m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+ 
+    <tr style="background-color:#eee;border-bottom:2px solid black">
+    <td rowspan="39" style="border-bottom:2px solid black">Bar cafeteria Il Caffè di Roma *La Rambla<br/><br/>+34 934121041</td>
+    <td rowspan="39" style="border-bottom:2px solid black">la Rambla 0076<br/><br/>08002<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#eee'>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>25.71m</td>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>25.71m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl.Joaquim Xira i Palau - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>372.07m</td>
+        <td>Pl. Sant Miquel - 4</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>312.87m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>473.3m</td>
+        <td>Pl.Joaquim Xira i Palau - 1</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>372.07m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Portal de Santa Madrona - 2</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>475.52m</td>
+        <td>Rambla del Raval - 13</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>435.71m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>501.48m</td>
+        <td>Sant Oleguer - 16</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>452.92m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer de Cervell&oacute; - 5</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>505.35m</td>
+        <td>Rambla del Raval - 20</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>461.73m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>507.32m</td>
+        <td>Pl. Jean Genet - 1</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>467.05m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>518.8m</td>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>473.3m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>La Rambla - 2</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>548.03m</td>
+        <td>Portal de Santa Madrona - 2</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>475.52m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>577.25m</td>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>501.48m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>582.68m</td>
+        <td>Carrer de Cervell&oacute; - 5</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>505.35m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Passeig de Colom, s/n</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>656.03m</td>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>507.32m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>660.03m</td>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>518.8m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>690.76m</td>
+        <td>Riera Alta - 6</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>524.88m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Catalunya  - 5</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>795.6m</td>
+        <td>La Rambla - 2</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>548.03m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>819.55m</td>
+        <td>Carrer de Sant Pau - 89</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>560.38m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>820.35m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>577.25m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>900.51m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>582.68m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Floridablanca  - 145</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>900.69m</td>
+        <td>Passeig de Colom, s/n</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>656.03m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Ict&iacute;neo</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>924.45m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>660.03m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>957.87m</td>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>690.76m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran Via de Les Corts Catalanes - 592</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>977.08m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>704.84m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Carrer Comer&ccedil; - 27</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>981.44m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>714.67m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Villarroel - 2</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>993.85m</td>
+        <td>Av. Paral.lel - 54</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>720.21m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Carrer de Sant Pau - 119</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>785.88m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>819.55m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>820.35m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Gombau - 24</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>836.74m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Vil&agrave; i Vil&agrave; - 45</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>859.69m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pl. Urquinaona - 3</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>897.96m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>900.51m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Floridablanca  - 145</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>900.69m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Ronda Sant Pau - 79</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>909.61m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pl. Ict&iacute;neo</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>924.45m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>957.87m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Gran Via de Les Corts Catalanes - 592</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>977.08m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Carrer Comer&ccedil; - 27</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>981.44m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Villarroel - 2</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>993.85m</td>
+      </tr>
+ 
+    <tr style="background-color:#ccc;border-bottom:2px solid black">
+    <td rowspan="27" style="border-bottom:2px solid black">Bar cafeteria Il Caffè di Roma *Diagonal<br/><br/>+34 934160602</td>
+    <td rowspan="27" style="border-bottom:2px solid black">Av Diagonal 466<br/><br/>08006<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#ccc'>
+        <td>Rambla Catalunya - 133</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>94.97m</td>
+        <td>Carrer de Bonavista - 14</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>359.99m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer de Bonavista - 14</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>359.99m</td>
+        <td>Enric Granados - 99</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>368.28m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Enric Granados - 99</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>368.28m</td>
+        <td>Proven&ccedil;a - 241</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>382.39m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Proven&ccedil;a - 241</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>382.39m</td>
+        <td>Travessera de Gracia - 92</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>389.1m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Travessera de Gracia - 92</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>389.1m</td>
+        <td>Passeig de Gr&agrave;cia - 89</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>393.6m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Passeig de Gr&agrave;cia - 89</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>393.6m</td>
+        <td>Tuset - 19</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>438.62m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Tuset - 19</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>438.62m</td>
+        <td>C&ograve;rsega - 216</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>568.03m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>C&ograve;rsega - 216</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>568.03m</td>
+        <td>Londres - 101</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>572.36m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Londres - 101</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>572.36m</td>
+        <td>Carrer del Can&oacute; - 1</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>577.06m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer del Can&oacute; - 1</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>577.06m</td>
+        <td>Proven&ccedil;a - 322</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>646.62m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Passeig de Gr&agrave;cia - 61</td>
+        <td style='text-align:center'>32</td>
+        <td style='text-align:left'>641.48m</td>
+        <td>Enric Granados - 35</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>761.25m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Proven&ccedil;a - 322</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>646.62m</td>
+        <td>Bruc - 130</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>791.77m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Carre Laforja - 74</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>787.27m</td>
+        <td>Gran de Gr&agrave;cia - 155</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>799.27m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bruc - 130</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>791.77m</td>
+        <td>Villarroel - 208</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>860.07m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran de Gr&agrave;cia - 155</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>799.27m</td>
+        <td>Rambla Catalunya  - 47</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>893.28m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Villarroel - 208</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>860.07m</td>
+        <td>Montmany - 1</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>898.0m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Rambla Catalunya  - 47</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>893.28m</td>
+        <td>Casanova - 119</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>909.29m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Montmany - 1</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>898.0m</td>
+        <td>Bail&egrave;n - 158</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>925.1m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Casanova - 119</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>909.29m</td>
+        <td>Girona - 126</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>934.43m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bail&egrave;n - 158</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>925.1m</td>
+        <td>Rambla Catalunya - 42</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>951.24m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Girona - 126</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>934.43m</td>
+        <td>C/ Londres - 53</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>965.43m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Rambla Catalunya - 42</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>951.24m</td>
+        <td>Bruc - 102</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>969.24m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>C/ Londres - 53</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>965.43m</td>
+        <td>Ind&uacute;stria - 10</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>975.18m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bruc - 102</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>969.24m</td>
+        <td>Amig&oacute; - 23</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>977.36m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Ind&uacute;stria - 10</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>975.18m</td>
+        <td>Rossell&oacute; - 108</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>991.99m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Amig&oacute; - 23</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>977.36m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+ 
+    <tr style="background-color:#eee;border-bottom:2px solid black">
+    <td rowspan="40" style="border-bottom:2px solid black">Bar cafereria Il Caffé di Roma *Via Laietana<br/><br/>+34 933190036</td>
+    <td rowspan="40" style="border-bottom:2px solid black">Via Laietana 0044<br/><br/>08003<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#eee'>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>114.74m</td>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>114.74m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>164.21m</td>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>164.21m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>204.44m</td>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>204.44m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>383.59m</td>
+        <td>Gombau - 24</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>298.8m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>M&eacute;ndez N&uacute;&ntilde;ez - 16</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>446.32m</td>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>383.59m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>506.6m</td>
+        <td>Pl. Urquinaona - 3</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>416.97m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Bruc - 20</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>524.3m</td>
+        <td>M&eacute;ndez N&uacute;&ntilde;ez - 16</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>446.32m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>556.97m</td>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>506.6m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>594.08m</td>
+        <td>Pl. Sant Miquel - 4</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>511.07m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>596.89m</td>
+        <td>Bruc - 20</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>524.3m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Catalunya  - 5</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>602.06m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>556.97m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>626.25m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>594.08m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Passeig de Llu&iacute;s Companys </td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>637.91m</td>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>596.89m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pg Llu&iacute;s Companys - 11</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>648.83m</td>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>626.25m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pg Llu&iacute;s Companys - 1</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>676.27m</td>
+        <td>Passeig de Llu&iacute;s Companys </td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>637.91m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pg Llu&iacute;s Companys - 18</td>
+        <td style='text-align:center'>34</td>
+        <td style='text-align:left'>692.09m</td>
+        <td>Pg Llu&iacute;s Companys - 11</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>648.83m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Carrer Comer&ccedil; - 27</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>697.84m</td>
+        <td>Pg Llu&iacute;s Companys - 1</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>676.27m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Passeig de Llu&iacute;s Companys</td>
+        <td style='text-align:center'>29</td>
+        <td style='text-align:left'>697.9m</td>
+        <td>Pg Llu&iacute;s Companys - 18</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>692.09m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pg Llu&iacute;s Companys - 2</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>711.43m</td>
+        <td>Carrer Comer&ccedil; - 27</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>697.84m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran Via - 632</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>733.85m</td>
+        <td>Passeig de Llu&iacute;s Companys</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>697.9m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Gran Via - 609</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>743.67m</td>
+        <td>Pg Llu&iacute;s Companys - 2</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>711.43m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bruc - 45</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>784.74m</td>
+        <td>Gran Via - 632</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>733.85m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>823.45m</td>
+        <td>Gran Via - 609</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>743.67m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>825.0m</td>
+        <td>Bruc - 45</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>784.74m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Casp - 67</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>840.62m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>809.57m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl.Joaquim Xira i Palau - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>855.95m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>809.71m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>859.7m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>823.45m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bruc - 66</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>924.0m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>825.0m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Ribes - 13</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>931.31m</td>
+        <td>Casp - 67</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>840.62m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Ali Bei - 44</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>939.63m</td>
+        <td>Pl.Joaquim Xira i Palau - 1</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>855.95m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Gran Via de Les Corts Catalanes - 592</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>948.89m</td>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>859.7m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Doctor Aiguader - 2</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>965.79m</td>
+        <td>Bruc - 66</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>924.0m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Recinte Parc de la Ciutadella</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>971.64m</td>
+        <td>Ribes - 13</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>931.31m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Ali Bei - 44</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>939.63m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Riera Alta - 6</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>946.57m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Gran Via de Les Corts Catalanes - 592</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>948.89m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Rambla del Raval - 13</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>959.22m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Doctor Aiguader - 2</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>965.79m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Recinte Parc de la Ciutadella</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>971.64m</td>
+      </tr>
+ 
+    <tr style="background-color:#ccc;border-bottom:2px solid black">
+    <td rowspan="44" style="border-bottom:2px solid black">Bar cafeteria Il Caffè di Roma *Rda Sant Pere<br/><br/>+34 933180608</td>
+    <td rowspan="44" style="border-bottom:2px solid black">Rda Sant Pere 11<br/><br/>08010<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#ccc'>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>173.43m</td>
+        <td>Pl. Urquinaona - 3</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>111.72m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>186.42m</td>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>173.43m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>236.73m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>186.42m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya  - 5</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>270.67m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>236.73m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Gran Via - 632</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>283.41m</td>
+        <td>Gran Via - 632</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>283.41m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran Via - 609</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>296.53m</td>
+        <td>Gran Via - 609</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>296.53m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Bruc - 20</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>343.09m</td>
+        <td>Bruc - 20</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>343.09m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>362.02m</td>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>362.02m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>423.05m</td>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>423.05m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>429.41m</td>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>429.41m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Bruc - 45</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>434.97m</td>
+        <td>Bruc - 45</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>434.97m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>M&eacute;ndez N&uacute;&ntilde;ez - 16</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>535.29m</td>
+        <td>M&eacute;ndez N&uacute;&ntilde;ez - 16</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>535.29m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>546.63m</td>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>546.63m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bruc - 66</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>546.7m</td>
+        <td>Bruc - 66</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>546.7m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Rambla Catalunya - 42</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>566.75m</td>
+        <td>Rambla Catalunya - 42</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>566.75m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Gran Via de Les Corts Catalanes - 592</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>616.65m</td>
+        <td>Gran Via de Les Corts Catalanes - 592</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>616.65m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Rambla Catalunya  - 47</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>629.81m</td>
+        <td>Rambla Catalunya  - 47</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>629.81m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Casp - 67</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>706.67m</td>
+        <td>Gombau - 24</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>672.2m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Diputaci&oacute; - 226</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>713.87m</td>
+        <td>Casp - 67</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>706.67m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Girona - 74</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>727.74m</td>
+        <td>Diputaci&oacute; - 226</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>713.87m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>737.33m</td>
+        <td>Girona - 74</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>727.74m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>739.36m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>737.33m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Bail&eacute;n - 62</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>743.96m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>739.36m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Universitat</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>751.28m</td>
+        <td>Bail&eacute;n - 62</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>743.96m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Bruc - 102</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>774.38m</td>
+        <td>Pl. Universitat</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>751.28m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Passeig de Llu&iacute;s Companys </td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>779.61m</td>
+        <td>Bruc - 102</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>774.38m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pg Llu&iacute;s Companys - 11</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>782.4m</td>
+        <td>Passeig de Llu&iacute;s Companys </td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>779.61m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pg Llu&iacute;s Companys - 18</td>
+        <td style='text-align:center'>34</td>
+        <td style='text-align:left'>823.45m</td>
+        <td>Pg Llu&iacute;s Companys - 11</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>782.4m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Passeig de Llu&iacute;s Companys</td>
+        <td style='text-align:center'>29</td>
+        <td style='text-align:left'>838.4m</td>
+        <td>Pg Llu&iacute;s Companys - 18</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>823.45m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>841.15m</td>
+        <td>Passeig de Llu&iacute;s Companys</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>838.4m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Passeig de Gr&agrave;cia - 61</td>
+        <td style='text-align:center'>32</td>
+        <td style='text-align:left'>841.96m</td>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>841.15m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>848.39m</td>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>848.39m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>896.94m</td>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>896.94m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Roger de Flor/ Gran V&iacute;a - 126</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>900.03m</td>
+        <td>Roger de Flor/ Gran V&iacute;a - 126</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>900.03m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Bail&eacute;n - 100</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>934.73m</td>
+        <td>Pl. Sant Miquel - 4</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>911.98m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Diputaci&oacute; - 350</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>978.29m</td>
+        <td>Diputaci&oacute; - 200</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>926.57m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Pg Llu&iacute;s Companys - 1</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>986.37m</td>
+        <td>Bail&eacute;n - 100</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>934.73m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Ali Bei - 44</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>986.87m</td>
+        <td>Riera Alta - 6</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>953.78m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Ribes - 13</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>997.18m</td>
+        <td>Enric Granados - 35</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>961.0m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Diputaci&oacute; - 350</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>978.29m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pg Llu&iacute;s Companys - 1</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>986.37m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Ali Bei - 44</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>986.87m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Ribes - 13</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>997.18m</td>
+      </tr>
+ 
+    <tr style="background-color:#eee;border-bottom:2px solid black">
+    <td rowspan="44" style="border-bottom:2px solid black">Cafè Nescafe *Jaume I<br/><br/>+34 933424429</td>
+    <td rowspan="44" style="border-bottom:2px solid black">C Jaume I 8*10<br/><br/>08002<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#eee'>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>403.48m</td>
+        <td>Pl. Sant Miquel - 4</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>180.05m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>413.81m</td>
+        <td>Duran i Bas - 2</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>403.48m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>445.05m</td>
+        <td>Pl. Carles Pi i Sunyer</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>413.81m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>487.97m</td>
+        <td>La Rambla - 80</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>445.05m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>526.47m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>449.72m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl.Joaquim Xira i Palau - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>535.67m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>452.14m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Carrer Comer&ccedil; - 27</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>545.73m</td>
+        <td>Gombau - 24</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>455.91m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Doctor Aiguader - 2</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>693.96m</td>
+        <td>Sant Pere M&eacute;s Alt - 4</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>487.97m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Portal de Santa Madrona - 2</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>715.67m</td>
+        <td>Comer&ccedil; - 36</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>526.47m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>La Rambla - 2</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>723.79m</td>
+        <td>Pl.Joaquim Xira i Palau - 1</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>535.67m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pl. Pau Vila</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>733.59m</td>
+        <td>Carrer Comer&ccedil; - 27</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>545.73m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Pau Vila</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>750.7m</td>
+        <td>Doctor Aiguader - 2</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>693.96m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>756.08m</td>
+        <td>Portal de Santa Madrona - 2</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>715.67m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>M&eacute;ndez N&uacute;&ntilde;ez - 16</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>756.6m</td>
+        <td>La Rambla - 2</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>723.79m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Passeig de Colom, s/n</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>757.35m</td>
+        <td>Pl. Pau Vila</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>733.59m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>759.92m</td>
+        <td>Pl. Pau Vila</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>750.7m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pg Llu&iacute;s Companys - 1</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>761.15m</td>
+        <td>PL. Urquinaona - 9</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>756.08m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>772.18m</td>
+        <td>M&eacute;ndez N&uacute;&ntilde;ez - 16</td>
+        <td style='text-align:center'>10</td>
+        <td style='text-align:left'>756.6m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Carrer de Cervell&oacute; - 5</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>790.98m</td>
+        <td>Passeig de Colom, s/n</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>757.35m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Ict&iacute;neo</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>796.27m</td>
+        <td>Pl. Vicen&ccedil; Martorell</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>759.92m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pg Llu&iacute;s Companys - 2</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>797.44m</td>
+        <td>Pg Llu&iacute;s Companys - 1</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>761.15m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>16</td>
+        <td style='text-align:left'>862.98m</td>
+        <td>Passeig de Colom</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>772.18m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Passeig de Llu&iacute;s Companys </td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>877.27m</td>
+        <td>Pl. Urquinaona - 3</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>785.05m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya  - 5</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>882.6m</td>
+        <td>Carrer de Cervell&oacute; - 5</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>790.98m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>885.64m</td>
+        <td>Pl. Ict&iacute;neo</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>796.27m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>887.62m</td>
+        <td>Pg Llu&iacute;s Companys - 2</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>797.44m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pg Llu&iacute;s Companys - 11</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>891.16m</td>
+        <td>Pl. Jean Genet - 1</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>828.27m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Bruc - 20</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>891.61m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>2</td>
+        <td style='text-align:left'>862.98m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>907.2m</td>
+        <td>Rambla del Raval - 13</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>874.62m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>911.04m</td>
+        <td>Passeig de Llu&iacute;s Companys </td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>877.27m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Recinte Parc de la Ciutadella</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>913.51m</td>
+        <td>Sant Oleguer - 16</td>
+        <td style='text-align:center'>18</td>
+        <td style='text-align:left'>878.09m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Passeig de Llu&iacute;s Companys</td>
+        <td style='text-align:center'>29</td>
+        <td style='text-align:left'>926.83m</td>
+        <td>Agust&iacute; Duran i Sanpere - 10</td>
+        <td style='text-align:center'>19</td>
+        <td style='text-align:left'>885.64m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td>Pg Llu&iacute;s Companys - 18</td>
+        <td style='text-align:center'>34</td>
+        <td style='text-align:left'>927.88m</td>
+        <td>Pl. Catalunya</td>
+        <td style='text-align:center'>12</td>
+        <td style='text-align:left'>887.62m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pg Llu&iacute;s Companys - 11</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>891.16m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Bruc - 20</td>
+        <td style='text-align:center'>8</td>
+        <td style='text-align:left'>891.61m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Rambla del Raval - 20</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>901.7m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 2</td>
+        <td style='text-align:center'>11</td>
+        <td style='text-align:left'>907.2m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pla&ccedil;a dels &Agrave;ngels - 1</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>911.04m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Recinte Parc de la Ciutadella</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>913.51m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Passeig de Llu&iacute;s Companys</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>926.83m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Pg Llu&iacute;s Companys - 18</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>927.88m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Riera Alta - 6</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>934.96m</td>
+      </tr>
+      <tr style='background-color:#eee'>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+        <td>Carrer de Sant Pau - 89</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>987.53m</td>
+      </tr>
+ 
+    <tr style="background-color:#ccc;border-bottom:2px solid black">
+    <td rowspan="23" style="border-bottom:2px solid black">Bar cafeteria Il Caffè di Roma *Gran de Gràcia<br/><br/>	</td>
+    <td rowspan="23" style="border-bottom:2px solid black">C Gran de Gràcia 105<br/><br/>08012<br/><br/>BARCELONA</td>
+    </tr>      <tr style='background-color:#ccc'>
+        <td>Gran de Gr&agrave;cia - 155</td>
+        <td style='text-align:center'>5</td>
+        <td style='text-align:left'>189.05m</td>
+        <td>Gran de Gr&agrave;cia - 155</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>189.05m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer del Can&oacute; - 1</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>307.85m</td>
+        <td>Carrer del Can&oacute; - 1</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>307.85m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Travessera de Gracia - 92</td>
+        <td style='text-align:center'>17</td>
+        <td style='text-align:left'>319.77m</td>
+        <td>Travessera de Gracia - 92</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>319.77m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carrer de la Santacreu - 2</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>511.39m</td>
+        <td>Carrer de la Santacreu - 2</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>511.39m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>C. De Nil Fabra - 16</td>
+        <td style='text-align:center'>22</td>
+        <td style='text-align:left'>569.29m</td>
+        <td>C. De Nil Fabra - 16</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>569.29m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Tuset - 19</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>578.09m</td>
+        <td>Tuset - 19</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>578.09m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Carrer de Bonavista - 14</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>595.46m</td>
+        <td>Carrer de Bonavista - 14</td>
+        <td style='text-align:center'>9</td>
+        <td style='text-align:left'>595.46m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Carre Laforja - 74</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>635.93m</td>
+        <td>Montmany - 1</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>661.99m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Montmany - 1</td>
+        <td style='text-align:center'>21</td>
+        <td style='text-align:left'>661.99m</td>
+        <td>Francol&iacute; - 21</td>
+        <td style='text-align:center'>1</td>
+        <td style='text-align:left'>706.53m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Del Nord - 5</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>667.22m</td>
+        <td>Torrent de Les Flors - 102</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>849.75m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Francol&iacute; - 21</td>
+        <td style='text-align:center'>23</td>
+        <td style='text-align:left'>706.53m</td>
+        <td>Pl. Joanic - s/n</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>866.5m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Rambla Catalunya - 133</td>
+        <td style='text-align:center'>26</td>
+        <td style='text-align:left'>706.6m</td>
+        <td>Londres - 101</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>880.26m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Torrent de Les Flors - 102</td>
+        <td style='text-align:center'>20</td>
+        <td style='text-align:left'>849.75m</td>
+        <td>Passeig de Gr&agrave;cia - 89</td>
+        <td style='text-align:center'>3</td>
+        <td style='text-align:left'>921.52m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Pl. Joanic - s/n</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>866.5m</td>
+        <td>Enric Granados - 99</td>
+        <td style='text-align:center'>7</td>
+        <td style='text-align:left'>936.0m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Rector Ubach - 24</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>875.1m</td>
+        <td>Ind&uacute;stria - 10</td>
+        <td style='text-align:center'>15</td>
+        <td style='text-align:left'>940.58m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Londres - 101</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>880.26m</td>
+        <td>Proven&ccedil;a - 241</td>
+        <td style='text-align:center'>4</td>
+        <td style='text-align:left'>970.67m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Carrer de P&aacute;dua - 98</td>
+        <td style='text-align:center'>27</td>
+        <td style='text-align:left'>905.99m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Madrazo - 131</td>
+        <td style='text-align:center'>24</td>
+        <td style='text-align:left'>909.69m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Passeig de Gr&agrave;cia - 89</td>
+        <td style='text-align:center'>25</td>
+        <td style='text-align:left'>921.52m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Enric Granados - 99</td>
+        <td style='text-align:center'>13</td>
+        <td style='text-align:left'>936.0m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+      <tr style='background-color:#ccc'>
+        <td>Ind&uacute;stria - 10</td>
+        <td style='text-align:center'>6</td>
+        <td style='text-align:left'>940.58m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+      <tr style='background-color:#fff'>
+        <td>Proven&ccedil;a - 241</td>
+        <td style='text-align:center'>14</td>
+        <td style='text-align:left'>970.67m</td>
+        <td></td>
+        <td style='text-align:center'></td>
+        <td style='text-align:left'>m</td>
+      </tr>
+    </table>
+  </body>
+</html>
